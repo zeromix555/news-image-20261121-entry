@@ -2,38 +2,25 @@
 [![rank](https://make.fun/badge/news-image-20261121/zeromix555/news-image-20261121-entry/rank.svg)](https://make.fun/bounty/news-image-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 [![reward](https://make.fun/badge/news-image-20261121/zeromix555/news-image-20261121-entry/reward.svg)](https://make.fun/bounty/news-image-20261121?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261121)
 
-# The World in One Day — Saturday, 21 November 2026
+# The World in One Day — 21 November 2026
 
 An entry for the [make.fun bounty "Sum up 21 November's world news in one image"](https://make.fun/bounty/news-image-20261121) ($100 in USDC).
 
-A make.fun `news-image-20261121` entry. The program writes one image that sums
-up the world's news of Saturday 21 November 2026 to `/output/entry.png`.
-
 ## The image
 
-A news-poster montage: a generated illustration of Earth at night over Europe
-(missile streaks, the scales of justice, a falling market chart, a summit hall)
-under the masthead "THE WORLD IN ONE DAY — SATURDAY, 21 NOVEMBER 2026", with
-six story cards drawn in crisp text:
+`entry.png` is a newspaper front page for Saturday, 21 November 2026.
+Under the masthead "THE WORLD IN ONE DAY", ten stories from that one
+day share a single page: the war in Ukraine, the World Court's genocide
+ruling on Myanmar, the AI sell-off on Wall Street, climate talks in
+Antalya, a joint peace declaration in Shenzhen, the drone downed over
+the Strait of Hormuz, and four more from the "Also today" strip — a
+quake in Peru, a pancreatic-cancer pill trial, and Gen Z protests
+across Europe.
 
-1. **War / Ukraine** — Russia's biggest barrage of November: 404 drones and
-   111 missiles hit Ukraine; at least 8 killed in Kyiv; two missiles and a
-   drone land in Poland.
-2. **Justice / The Hague** — The World Court finds Myanmar responsible for
-   genocide against the Rohingya, a first for the court.
-3. **Markets / Wall Street** — AI sell-off drags the S&P 500 into correction.
-4. **Climate / COP31, Antalya** — Climate talks run past their deadline as
-   fossil-fuel language drops from the draft deal.
-5. **Diplomacy / Shenzhen** — Trump, Xi and Putin sign a joint peace
-   declaration.
-6. **Middle East / Hormuz** — Iran downs a US MQ-9 drone over the Strait.
-
-Plus an "Also today" strip (Peru magnitude 6.8 quake, pancreatic-cancer pill
-trial, Gen Z protests across Europe).
-
-All headlines and labels are drawn programmatically, so every word is spelled
-exactly as reported. Sources: AP, Reuters, BBC, The New York Times, the
-International Court of Justice, the United Nations.
+Every headline is drawn as crisp text on the page, so each story reads
+clearly at a glance and every word is spelled exactly as reported.
+Sources include AP, Reuters, BBC, The New York Times, the
+International Court of Justice, and the United Nations.
 
 ## Run
 
@@ -41,9 +28,9 @@ International Court of Justice, the United Nations.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`main.ts` copies the `entry.png` beside it to `$MAKEFUN_OUTPUT_DIR/entry.png`
-(`/output/entry.png` in the grader). No network, no dependencies, deterministic:
-both runs write the same bytes.
+`main.ts` copies `entry.png` to `$MAKEFUN_OUTPUT_DIR/entry.png`
+(`/output/entry.png` in the grader). No network, no dependencies,
+fully deterministic: repeated runs write byte-identical output.
 
 ## License
 
